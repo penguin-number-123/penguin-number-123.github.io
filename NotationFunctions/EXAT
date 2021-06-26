@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="../Style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<body>
+    <h1>Extended @ notation!</h1>
+    <p>First, we define the @: a@b = \(a\uparrow^{a*b}b\) \(a@^{c}b = a@(a@^{c-1}b)b\) until c is equal to one, in that case, \(a@^{c}b = a@b\)</p>
+    <p>Then, we introduce a shorthand for the @ notation: \(a[b]c = a@^{b}c\)</p>
+    <p>I use the modified FIH, hereby I will declare it's base rule as "\(f_0(n) =\) "insert function name"</p>
+    <p>Suppose a large countable ordinal such to that every finite number a satisfies a < u. A fast iteration hierarchy of functions, \(f_a:\mathbb N \rightarrow \mathbb N\)
+        <br />
+        \(f_0(n)=\)"insert function"
+        \(f_{n+1}(n) = f^{g(n,n)}(n)\) until n = 0, in which case, refer to the top rule.
+        <br /> 
+        Where the g(n,m) is defined like so: (for all n,m, they are positive whole numbers.)
+        \(g(0,0) = 1\) 
+        \(g(0,m) = m^m\)
+        \(g(n,m) = [g(n-1,]^{n},m)\) if n > 1
+        \([g(n]^{o},m) = g(([g(n]^{o-1},m)),m)\) if o > 1, else:
+        \([g(n]^{o},m) = g(n,m)\) if o = 1
+    </p>
+    <p>
+        \(a[1]^{c}b = f_{c-1}(a@b),f_0(n) = a[b]c)
+        \(a[b]^{d}c = f_{d-1}(a@^{b}c)), f_0(n) = a[b]^{d-1}c\), until d = 1, in which case refer below
+        \(a[b]^{1}c = a[b]c\)
+    </p>
+</body>
+</html>

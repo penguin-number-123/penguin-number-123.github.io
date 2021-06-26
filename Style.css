@@ -1,5 +1,5 @@
 /*Heading no longer uses horrid font*/
-.h1{
+h1{
     font-family: Arial, Helvetica, sans-serif;
 }
 /* Add a black background color to the top navigation */
@@ -32,6 +32,9 @@
   color: white;
 }
 
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
