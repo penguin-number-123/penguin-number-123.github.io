@@ -36,3 +36,10 @@
 .topnav .icon {
   display: none;
 }
+
+body {
+    background-image: "D:\Mumuji\Documents\GitHub\penguin-number-123.github.io\istockphoto-165955232-612x612.jpg";
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
