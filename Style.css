@@ -38,7 +38,7 @@
 }
 
 body {
-    background-image: url(istockphoto-165955232-612x612.jpg);
+    background-image: url('istockphoto-165955232-612x612.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
