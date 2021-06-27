@@ -5,7 +5,8 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <body>
     <h1>Extended @ notation!</h1>
-    <p>First, we define the @: a@b = \(a\uparrow^{a*b}b\) \(a@^{c}b = a@(a@^{c-1}b)b\) until c is equal to one, in that case, \(a@^{c}b = a@b\)</p>
+    <p>(note that all terms and things used in this are in the set of Positive Whole Numbers) <br />
+        First, we define the @: a@b = \(a\uparrow^{a^b}b\) \(a@^{c}b = a@(a@^{c-1}b)\) until c is equal to one, in that case, \(a@^{c}b = a@b\)</p>
     <p>Then, we introduce a shorthand for the @ notation: \(a[b]c = a@^{b}c\)</p>
     <p>I use the modified FIH, hereby I will declare it's base rule as "\(f_0(n) =\) "insert function name"</p>
     <p>Suppose a large countable ordinal such to that every finite number a satisfies a < u. A fast iteration hierarchy of functions, \(f_a:\mathbb N \rightarrow \mathbb N\)
@@ -26,5 +27,19 @@
         <br />
         \(a[b]^{1}c = a[b]c\)
     </p>
+    <p>
+        Then, we define two rules: \(a[b]c = [a,b,c]\) and \(a[b]^{d}c = [a,b,c,d]\)
+    <br />
+        After that, I continue to extend for arrays of length n. <br />
+        \([\underbrace{x_1,x_2,\cdots,x_{n-1},x_n}_{n},1] = [\underbrace{x_1,x_2,\cdots,x_{n-1},x_n}_{n}]\)<br />
+        \([\underbrace{x_1,x_2,\cdots,x_{n-1},x_n}_{n}] = [\underbrace{x_1-1,x_2*(n-1),\cdots,x_{n-1}*(n-1),x_n*(n-1)}_{n}]\)<br />
+        \([x_1,x_2,1,\underbrace{\cdots}_{n\,1s}1,x_{n-1},x_n] = \)[x_1-1,x_2*(n-1),1,\underbrace{\cdots}_{(n-1)\,1s}1,x_{n-1}*(n-1),x_n*(n-1)]\)<br />
+        The * operator is defined below:
+        a*b = [\underbrace{a,a,\cdots,a,a}_{\text b copies of a, and no other term other than a.}]
+
+    </p>
+    <footer>
+        Return to <a href = "https://penguin-number-123.github.io/NotationsFunctions">Notations and Functions</a>
+    </footer>
 </body>
 </html>

@@ -2,6 +2,9 @@
 h1{
     font-family: Arial, Helvetica, sans-serif;
 }
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+}
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -45,5 +48,5 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-size: large;
+    font-size: x-large;
   }
