@@ -1,0 +1,29 @@
+<DOCTYPE html>
+    <html>
+        <link rel="stylesheet" href="../Style.css">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="https://penguin-number-123.github.io/" class="active">Home</a>
+            <a href="https://penguin-number-123.github.io/Numbers/">Numbers</a>
+            <a href="#contact">Notations & functions</a>
+            <a href="#about">Test2</a>
+            <a href="javascript:void(0);" class="icon" onclick="Responsive()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        <h1>These are my notations and functions.</h1>
+
+    </body>
+    <script>
+        function Responsive() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+    </html>
