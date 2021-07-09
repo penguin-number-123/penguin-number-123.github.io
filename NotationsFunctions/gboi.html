@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <title>
+            G function
+        </title>
+        <p>
+            I define g(n,m) in the following recursive way.
+
+        \(g(n,m) = m^m\) if n = 0
+        <br />
+        \(g(n+1,m) = g(n,g(n,\{m\}^{m}_{n}))\) if n > 0.
+        <br />
+        \(\{n\}^{m+1}_{p} = \{\{n\}^{m}_{p}\}_{p}\) if m > 1
+        <br />
+        \(\{n\}^{m}_{p} = \{n\}_{p}\) if m = 1
+        <br />
+        \(\{n\}_{p+1} = g(p,g(p,\{n\}_{p}))\) if p > 1
+        <br />
+        \(\{n\}_{p} = [n]^{n}_{n}\) if p = 1
+        <br />
+        \([n]^{m+1}_{p} = [[n]^{m}_{p}]_{p}\) if m > 1
+        <br />
+        \([n]^{m}_{p} = [n]_{p}\) if m = 1
+        <br />
+        \([n]_{p+1} = [n]^{n}_{p}\) if p > 1
+        <br />
+        \([n]_{p} = n\uparrow^{n}n\) if p = 1
+        </p>
+    </body>
+</html>

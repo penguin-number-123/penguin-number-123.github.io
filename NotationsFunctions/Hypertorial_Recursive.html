@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="../Style.css">
+    <link rel="shortcut icon" type="image/jpg" href="../istockphoto-828605644-640x640 (1).jpg">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <body>
+        <h1>
+            Hypertorial Recursive
+        </h1>
+        <p>
+            Define a!b as \(a\uparrow^{b}a-1\uparrow^{b}\cdots 2\uparrow^{b}1)
+            <br />
+            a![1,b] = a!b
+            a![n,b] = (a!b)!b)!b)...!b) with n !b's for n> 1
+            a![1,m,b] = a![m,b]
+            a![m,1,b] = a![m,b]
+            a![m,b,1] = a![m,b]
+            a![m,1,1] = a!m
+            a![n,m,b] = a![n-1,\(f(m),f(b)\)] , \(f(n) = n![n-1,n,n]\)
+            It's kind big??
+            3![3,3,3] = 3![2,3![2,3,3],3![2,3,3]]
+            3![2,3,3] = 3![1,3![1,3,3],3![1,3,3]]
+            3![1,3,3] = ((3!3)!3)!3
+            3!3 = \(3\uparrow^32\uparrow^{3}1)
+            and so on.
+        </p>
+    </body>
+    <footer>
+        Return to <a href="https://penguin-number-123.github.io/NotationsFunctions">Notations And Functions</a>.
+    </footer>
+</html>
