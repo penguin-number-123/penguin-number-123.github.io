@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>The Exam Array Notation</h1>
+        <p>Background: This was defined in 25 minutes, during a break in an exam.</p>
+        <h2>Defining ExCAN (Extended Chained Arrow Notation)</h2>
+        <p>
+            All terms below are in the set C where \(C = {x|0\ge x < \omega}\) using set builder notation.
+            If b is larger than 10
+            <br />
+            \(a^{b+1}\rightarrow c = a^{b-1}\rightarrow \underbrace{c \cdots c}_{a^{b-1}\rightarrow a\text{ copies of c}}\) You evaluate it from the bottom first, then right to left, as in finding out the copies of c, then figuring out \(c^{b-1}\rightarrow c\), and so on.
+            <br />
+            If b is 0:
+            <br />
+            \(a^{b+1}\rightarrow c = a\rightarrow c\)
+            <br />
+            If b is larger than 0:
+            <br />
+            \(a_{b+1}\rightarrow c = a^b_b\rightarrow \underbrace{c^b_b \rightarrow c \cdots c}_{a_b\rightarrow a \text{ copies of c}}\) To evaluate a arrow with a top and bottom number, ignore the bottom one, and evaluate like the first part, then once you’re done and reached all tops are 1s, find the rightmost and expand its lower number. Be sure to do the bottom one first (\(a_b\rightarrow a\).
+            <br />
+            If b = 0:
+            <br />
+            \(a_{b+1}\rightarrow c = a\rightarrow c\)
+            <br />
+            Finally,
+            <br />
+            if b > 0:
+            <br />
+            \(a(b+1)\rightarrow c = a_{b^b_b\rightarrow b}^{b^b_b\rightarrow b}\rightarrow c\)
+            <br />
+            Again, ignore the (n) and solve \(a^b_c\rightarrow d\) first, using the logic above. So remember, solve superscript, then subscript, finally brackets.
+        </p>
+        <p>
+            1. \(a[b]c = a(b)\rightarrow c\)
+            2. \(a[b]^{d+1}c = \underbrace{a[a[\cdots a[}_{\text{b copies of a}}b]^d]^d\cdots ]^d c\)
+                2.2 if d = 0, \(a[b]^{d+1}c = a[b]c\)
+            3. \([a] = a\)
+            4. \([a,b] = a^b\)
+            5. \([a,b,c] = a[b]c\)
+            6. \([a,b,c,d] = a[b]^dc\)
+            # is rest of array.
+            \([\#,1] = [\#]\)
+            \([1,\#] = [\#]\)
+            \(a*b = [\underbrace{a,a,\cdots, a,a}_{\text{b copies of a}}]\)
+            \([#,a,b,1,x,y,#] = [\#,a-1,b*b,(a*b)*(x*y),x*x,y-1,\#]\)
+            \([\#a,b,1]\)
+        </p>
+    </body>
+</html>
