@@ -13,8 +13,9 @@
     <p>Suppose a large countable ordinal such to that every finite number a satisfies a < u. A fast iteration hierarchy of functions, \(f_a:\mathbb N \rightarrow \mathbb N\)
         <br />
         \(f_0(n)=\)"insert function"<br />
-        \(f_{n+1}(n) = f^{}(n)\) until n = 0, in which case, refer to the top rule.<br />
+        \(f_{n+1}(n) = f\uparrow^nn(n)\) until n = 0, in which case, refer to the top rule.<br />
     </p>
+    Where the \(\uparrow\) is defined as follows:
     \begin{eqnarray*} f_x \uparrow^n b(c) = \left\{ \begin{array}{ll} {f_x}^b(c) & (n = 1) \\ f_x(c) & (n > 1, b = 1) \\ f_x \uparrow^{n-1} (f_x \uparrow^n (b-1)(c))(c) & (n > 1, b > 1) \end{array} \right. \end{eqnarray*}
     <p>
         \(a[1]^{c}b = f_{c-1}(a@b),f_0(n) = a[b]c\)<br />
