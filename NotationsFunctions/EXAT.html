@@ -13,31 +13,9 @@
     <p>Suppose a large countable ordinal such to that every finite number a satisfies a < u. A fast iteration hierarchy of functions, \(f_a:\mathbb N \rightarrow \mathbb N\)
         <br />
         \(f_0(n)=\)"insert function"<br />
-        \(f_{n+1}(n) = f^{g(n,n)}(n)\) until n = 0, in which case, refer to the top rule.<br />
-
-        Where the g(n,m) is defined like so: (for all n,m, they are positive whole numbers.)<br />
-        I define g(n,m) in the following recursive way.
-
-        \(g(n,m) = m^m\) if n = 0
-        <br />
-        \(g(n+1,m) = g(n,g(n,\{m\}^{m}_{n}))\) if n > 0.
-        <br />
-        \(\{n\}^{m+1}_{p} = \{\{n\}^{m}_{p}\}_{p}\) if m > 1
-        <br />
-        \(\{n\}^{m}_{p} = \{n\}_{p}\) if m = 1
-        <br />
-        \(\{n\}_{p+1} = g(p,g(p,\{n\}_{p}))\) if p > 1
-        <br />
-        \(\{n\}_{p} = [n]^{n}_{n}\) if p = 1
-        <br />
-        \([n]^{m+1}_{p} = [[n]^{m}_{p}]_{p}\) if m > 1
-        <br />
-        \([n]^{m}_{p} = [n]_{p}\) if m = 1
-        <br />
-        \([n]_{p+1} = [n]^{n}_{p}\) if p > 1
-        <br />
-        \([n]_{p} = n\uparrow^{n}n\) if p = 1
+        \(f_{n+1}(n) = f^{}(n)\) until n = 0, in which case, refer to the top rule.<br />
     </p>
+    \begin{eqnarray*} f_x \uparrow^n b(c) = \left\{ \begin{array}{ll} {f_x}^b(c) & (n = 1) \\ f_x(c) & (n > 1, b = 1) \\ f_x \uparrow^{n-1} (f_x \uparrow^n (b-1)(c))(c) & (n > 1, b > 1) \end{array} \right. \end{eqnarray*}
     <p>
         \(a[1]^{c}b = f_{c-1}(a@b),f_0(n) = a[b]c\)<br />
         \(a[b]^{d}c = f_{d-1}(a@^{b}c)), f_0(n) = a[b]^{d-1}c\), until d = 1, in which case refer below
