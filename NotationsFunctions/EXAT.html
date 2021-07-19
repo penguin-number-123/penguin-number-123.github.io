@@ -14,7 +14,7 @@
         <br />
         \(f_0(n)=\)"insert function"<br />
         \(f_{n+1}(n) = f_{n}\underbrace{\rightarrow n \cdots \rightarrow n}_{\text{n copies of 'n', where array only has n.}}(n)\) until n = 0, in which case, refer to the top rule.<br />
-    </p>
+    
     Where the \(\uparrow\) is defined as follows:
     \begin{eqnarray*} f_x \uparrow^n b(c) = \left\{ \begin{array}{ll} {f_x}^b(c) & (n = 1) \\ f_x(c) & (n > 1, b = 1) \\ f_x \uparrow^{n-1} (f_x \uparrow^{n-1} (f_x \uparrow^{n-1} (f_x \uparrow^n (b-1)(c))(c) & (n > 1, b > 1) \end{array} \right. \end{eqnarray*}
     \(a \rightarrow b = a^{b}\)
@@ -24,6 +24,7 @@
     \(f_x \rightarrow\ldots\rightarrow b \rightarrow 1 = f_x \rightarrow\ldots\rightarrow b\) — When last entry is 1, it will be ignored.<br /> 
     \(f_x \rightarrow\ldots\rightarrow b \rightarrow 1 \rightarrow c = f_x \rightarrow\ldots\rightarrow b\)<br /> 
     \(f_x \rightarrow\ldots\rightarrow b \rightarrow (c + 1) \rightarrow (d + 1) = f_x \rightarrow\ldots\rightarrow b \rightarrow (f_x \rightarrow\ldots\rightarrow b \rightarrow c \rightarrow (d + 1) ) \rightarrow d\)<br /> 
+    </p>
     <p>
         \(a[1]^{c}b = f_{c-1}(a@b),f_0(n) = a[b]c\)<br />
         \(a[b]^{d}c = f_{d-1}(a@^{b}c)), f_0(n) = a[b]^{d-1}c\), until d = 1, in which case refer below
@@ -35,7 +36,8 @@
     <br />
         After that, I continue to extend for arrays of length n. <br />
         \([\underbrace{x_1,x_2,\cdots,x_{n-1},x_n}_{n},1] = [\underbrace{x_1,x_2,\cdots,x_{n-1},x_n}_{n}]\)<br />
-        \([\underbrace{x_1,x_2,\cdots,x_{n-1},x_n}_{n}] = [\underbrace{x_1-1,x_2*(n-1),\cdots,x_{n-1}*(n-1),x_n*(n-1)}_{n}]\)<br />
+        \([1,\underbrace{x_1,x_2,\cdots,x_{n-1},x_n}_{n}] = [\underbrace{x_1,x_2,\cdots,x_{n-1},x_n}_{n}]\)<br />
+        \([\underbrace{x_1,x_2,\cdots,x_{n-1},x_n}_{n}] = [\underbrace{x_1-1,x_2*(n-1),\cdots,x_{n-1}*(n-1),x_n*(n-1)}_{n}]\)(apply only if \(x_1\) is larger than 1.<br />
         \([x_1,x_2,\underbrace{1,\cdots, 1}_{p\,1s},x_{n-1},x_n] = [x_1*(n-1),x_2*(n-1),\underbrace{1,\cdots,1}_{(p-1)1s},x_{n-1}*(n-1),x_n*(n-1)]\)<br />
         The * operator is defined below:
         \(a*b = [\underbrace{a,a,\cdots,a,a}_{\text {b copies of a, and no other term other than a.}}]\)
