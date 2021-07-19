@@ -13,10 +13,17 @@
     <p>Suppose a large countable ordinal such to that every finite number a satisfies a < u. A fast iteration hierarchy of functions, \(f_a:\mathbb N \rightarrow \mathbb N\)
         <br />
         \(f_0(n)=\)"insert function"<br />
-        \(f_{n+1}(n) = f\uparrow^nn(n)\) until n = 0, in which case, refer to the top rule.<br />
+        \(f_{n+1}(n) = f_{n}\underbrace{\rightarrow n \cdots \rightarrow n}_{\text{n copies of 'n', where array only has n.}}(n)\) until n = 0, in which case, refer to the top rule.<br />
     </p>
     Where the \(\uparrow\) is defined as follows:
-    \begin{eqnarray*} f_x \uparrow^n b(c) = \left\{ \begin{array}{ll} {f_x}^b(c) & (n = 1) \\ f_x(c) & (n > 1, b = 1) \\ f_x \uparrow^{n-1} (f_x \uparrow^n (b-1)(c))(c) & (n > 1, b > 1) \end{array} \right. \end{eqnarray*}
+    \begin{eqnarray*} f_x \uparrow^n b(c) = \left\{ \begin{array}{ll} {f_x}^b(c) & (n = 1) \\ f_x(c) & (n > 1, b = 1) \\ f_x \uparrow^{n-1} (f_x \uparrow^{n-1} (f_x \uparrow^{n-1} (f_x \uparrow^n (b-1)(c))(c) & (n > 1, b > 1) \end{array} \right. \end{eqnarray*}
+    \(a \rightarrow b = a^{b}\)
+    <br /> 
+    Where the chained arrows is as follows:<br /> 
+    \(f_x \rightarrow b \rightarrow c = a\uparrow^cb = f_x\underbrace{\uparrow\ldots\uparrow}_cb\) (in which up-arrow notation is used) = a[c+2]b (in which the bracket notation of hyper operator is used)<br /> 
+    \(f_x \rightarrow\ldots\rightarrow b \rightarrow 1 = f_x \rightarrow\ldots\rightarrow b\) — When last entry is 1, it will be ignored.<br /> 
+    \(f_x \rightarrow\ldots\rightarrow b \rightarrow 1 \rightarrow c = f_x \rightarrow\ldots\rightarrow b\)<br /> 
+    \(f_x \rightarrow\ldots\rightarrow b \rightarrow (c + 1) \rightarrow (d + 1) = f_x \rightarrow\ldots\rightarrow b \rightarrow (f_x \rightarrow\ldots\rightarrow b \rightarrow c \rightarrow (d + 1) ) \rightarrow d\)<br /> 
     <p>
         \(a[1]^{c}b = f_{c-1}(a@b),f_0(n) = a[b]c\)<br />
         \(a[b]^{d}c = f_{d-1}(a@^{b}c)), f_0(n) = a[b]^{d-1}c\), until d = 1, in which case refer below
