@@ -5,9 +5,12 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <body>
-        Let μ be a large countable ordinal such to every limit ordinal α < μ there is assigned a fundamental sequence (a strictly increasing sequence of ordinals whose supremum is α).  A accelerated-growing hierarchy of functions h<sub>α</sub>: N → N, for α < μ, is then defined as follows:
+        Let μ be a large countable ordinal such to every limit ordinal α < μ there is assigned a fundamental sequence (a strictly increasing sequence of ordinals whose supremum is α).  A accelerated-growing hierarchy of functions h<sub>α</sub>: N → N, for α < μ, is then defined as follows:<br />
+       
         \(h_0(n)= n\rightarrow^nn\)<br />
+
         \(h_{α+1}(n) = h_{α}α\rightarrow^αα(n\rightarrow^nn)\) until n = 0, in which case, refer to the top rule.<br />
+        
         \(h_{a}(n) = h_{a[n\rightarrow^nn](n\rightarrow^nn)\)<br />
     Where the \(\uparrow\) is defined as follows:<br />
     \begin{eqnarray*} f_x \uparrow^n b(c) = \left\{ \begin{array}{ll} {f_x}^b(c) & (n = 1) \\ f_x(c) & (n > 1, b = 1) \\ f_x \uparrow^{n-1} (f_x \uparrow^{n-1} (f_x \uparrow^{n-1} (f_x \uparrow^n (b-1)(c))(c) & (n > 1, b > 1) \end{array} \right. \end{eqnarray*}
