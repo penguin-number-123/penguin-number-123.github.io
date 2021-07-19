@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <link rel="shortcut icon" type="image/jpg" href="../istockphoto-828605644-640x640 (1).jpg">
+    <link rel="stylesheet" href="../Style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <body>
+        <h1>Penguin E system</h1>
+        <p>
+            So, this is some sort of E system.
+
+        P is for penguiN<br />
+
+        Ex is for extending<br />
+
+        \(ExP\{m+1\}n = Exp\{m\}^{n}n\) If \(m > 0\) (Means recurse \(Exp\{m\}\) on n , n times)<br />
+
+        \(ExP\{m+1\}n = 10\uparrow^{n}n\uparrow n\) if m = 0<br />
+
+        \(ExP\{m\}n\,S_{p+1}\,q = ExP\{m\}q\,\underbrace{S_{p-1}(q\,S_{p-1}(q\cdots}_{ExP\{m\}n \,S_{p-1}s }(q)\)<br />
+
+        \(ExP\{m\}n\,S_{p+1}\,q = ExP\{m\}n\uparrow q\) when p is zero<br />
+
+        Ok ok I don’t know how to not use ellipses, so just bear with me.<br />
+
+        \(Pn = ExP\{n\}n\,S_{n}^n\,n\)<br />
+
+        \(Pn\wedge^{m}q = Pn\underbrace{\wedge q\wedge q\wedge q\cdots\wedge q}_{\text{Pn q’s}}\)<br />
+
+        Where \(\wedge\) operates as follows:<br />
+
+        \(Pa_1\wedge a_2\wedge \cdots\wedge a_n = P^{Pa_n}a_1\wedge a_2\wedge\cdots\wedge a_n-1\)<br />
+
+        \(Pa_1\wedge a_2\cdots\wedge 1\wedge a_n = Pa_1 \wedge a_2\cdots \wedge a_n\) when a part of the array is 1, delete it.<br />
+
+        E.g. \(P2\wedge2 = P^{P2}2\wedge1 = P^{P2}2 = \underbrace{PP\cdots P}_{P2\,Ps}2\)<br />
+
+        Note that superscripts denote recursion.<br />
+
+        Extended P system<br />
+
+        \(xPn = P^{n}n\wedge^{n}n\)<br />
+
+        \(xPn\#^{m}o = xPn\#n\underbrace{\#o\#o\cdots\#o}_{xPm\,o’s}\)<br />
+
+        \(xPa_1\#\cdots\#a_n-1\#a_n = xPa_1\#\cdots\#xPa_n-1\) So, we remove the last part of the array and replace the second to last with \(xPa_n\), which is the original last.<br />
+
+        \(xPa\#\#b = xP\underbrace{a\#a\#a \cdots \#a}_{b}\)<br />
+
+        \(xPa\underbrace{\#\cdots\#}_{n}b = xP\underbrace{a\underbrace{\#\cdots\#}_{n-1}a\cdots a\underbrace{\#\cdots\#}_{n-1} a}_{b}\) there are b sets of n-1 octothropes.<br />
+
+        The next Hyperion is ^<br />
+
+        \(\left. \begin{matrix} &&xPa\underbrace{\#\cdots \#}b\\ & &xPa\underbrace{\#\cdots \#}b \\ & & \;\;\;\;\underbrace{\quad\;\; \vdots \quad \;\;}\\ & &xPa\underbrace{\# \cdots \#}b \\ & & b\quad \#'s \end{matrix} \right \} xPa\#b\) <br />
+        </p>
+    </body>
+</html>

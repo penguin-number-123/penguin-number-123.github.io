@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <link rel="shortcut icon" type="image/jpg" href="../istockphoto-828605644-640x640 (1).jpg">
+        <link rel="stylesheet" href="../Style.css">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <h1>Conham's number</h1>
+        <p>
+            Conham's number is a mix of Conway's chained arrow notation and Graham's number.
+
+            \(CH_0 = G_{3\rightarrow 3 \rightarrow 3 \rightarrow 3}\)
+
+            \(CH_{k+1} = \underbrace{3\rightarrow 3 \cdots \rightarrow 3}_{CH_k \rightarrow s}\)
+
+            Conham's number = \(CH_64\)
+
+            My Conham's number array generator:
+
+            (note that # means the rest of the array, and that n and m are whole numbers that are positive, zero included)
+
+            \(CA(n,m,\#) = CH_{CA(n-1,m,\#)}\)
+            \(CA(n,m,\#) = CA(CH_m,\#)\) When n = 0
+
+            That's it for this array
+
+            We could also create a unary function, denoted \(f_{CA}(n)\).
+
+            \(f_{CA}(n) = \underbrace{CA(n,n\cdots,n)}_{n\,ns}\)
+
+            So, we have an array of size n, containing only n.
+
+            (Example: \(f_{CA}(3) = CA(3,3,3)\) ) Hope this helps
+
+            Unfortunately, I do not know how to not use ellipses.
+
+            One final note:
+
+            Conhamgol = \(f_{CA}(10^{100})\)
+
+            Conhamgolplex = \(f_{CA}(10^{10^{100}})\)
+
+            Conhamduogolplex = \(f_{CA}(10^{10^{10^{100}}})\)
+        </p>
+    </body>
+</html>
