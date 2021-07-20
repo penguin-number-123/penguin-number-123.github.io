@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <link rel="shortcut icon" type="image/jpg" href="../istockphoto-828605644-640x640 (1).jpg">
+    <link rel="stylesheet" href="../Style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <h1> Absolute Omegaggol</h1>
+    <p>
+        Let \(z\) be an empty string or a string consisting of one or more comma-separated zeros \(0,0,...,0\) and \(s\) be an empty string or a string consisting of one or more comma-separated ordinals \(\alpha _{1},\alpha _{2},...,\alpha _{n}\) with \(\alpha _{1}>0\). The binary function \(\varphi (\beta ,\gamma )\) can be written as \(\varphi (s,\beta ,z,\gamma )\) where both \(s\) and \(z\) are empty strings.<br />
+        The finitary Veblen functions are defined as follows:<br />
+         \(\varphi (\gamma )=\omega ^{\gamma }\)<br />
+         \(\varphi (z,s,\gamma )=\varphi (s,\gamma )\)<br />
+         if \(\beta >0\), then \(\varphi (s,\beta ,z,\gamma )\) denotes the \((1+\gamma )\)-th common fixed point of the functions \(\xi \mapsto \varphi (s,\delta ,\xi ,z)\) for each \(\delta <\beta\)<br />
+        
+        <h2> Normal Form for finitary Veblen function<h2>
+        We simultaneously define:
+         predicate \(_{FNF}\) (normal form for finitary Veblen function);  <br />
+         set \(T_F\) i.e. countable set of ordinals such that each element of the set can be denoted uniquely using only  the symbols \(0, +,\varphi\) where \(\varphi\)  denotes finitary Veblen function;<br />
+         set \(P_F\) (subset of \(T_F\) which includes only additive principal numbers).<br />
+        
+        Definition of \(_{FNF}\)<br />
+         \(\alpha=_{FNF}\alpha _{1}+\cdots +\alpha _{n}\) iff \( \alpha =\alpha _{1}+\cdots +\alpha _{n}\wedge \alpha _{1}\geq \cdots \geq \alpha _{n}\wedge \alpha _{1},... ,\alpha _{n}\in P_F\)<br />
+         \(\alpha=_{FNF}\varphi(\alpha_1,...,\alpha_n)\) iff \( \alpha=\varphi(\alpha_1,...,\alpha_n)\wedge \alpha_1,...,\alpha_n<\alpha\wedge0<\alpha_1\)<br />
+        Definition of sets \(T_F\) and \(P_F\)<br />
+         \(P_F \subset T_F\)<br />
+         \(0 \in T_F\)<br />
+         If \(\alpha=_{FNF}\alpha _{1}+\cdots +\alpha _{n}\) and \(\alpha _{1},\cdots , \alpha _{n}\in P_F\) then \(\alpha \in T_F\)<br />
+         If \(\alpha=_{FNF}\varphi(\alpha_1,...,\alpha_n)\) and \( \alpha_1,...,\alpha_n\in T_F\) then \(\alpha \in P_F\)<br />
+        
+        <h2> Fundamental sequences <h2>
+         If \(\alpha=\varphi (s_{1})+\varphi (s_{2})+\cdots +\varphi (s_{k})\) then \(\alpha[n]=\varphi (s_{1})+\varphi (s_{2})+\cdots +(\varphi (s_{k})[n])\)<br />
+         If \(\alpha=\varphi (\gamma )\) then \(\alpha[n]=\left\{{\begin{array}{lcr}n\quad {\text{if}}\quad \gamma =1\\\varphi (\gamma -1)\times n\quad {\text{if}}\quad \gamma \quad {\text{is a successor ordinal}}\\\varphi (\gamma [n])\quad {\text{if}}\quad \gamma \quad {\text{is a limit ordinal}}\\\end{array}}\right.\)<br />
+         If \(\alpha=\varphi (s,\beta ,z,\gamma )\) then: 
+        \(\alpha[0]=0\) and \(\alpha[n+1]=\varphi (s,\beta -1,\alpha[n],z)\) if \(\gamma =0\) and \(\beta\) is a successor ordinal;
+         \(\alpha[0]=\varphi (s,\beta ,z,\gamma -1)+1\) and \(\alpha[n+1]=\varphi (s,\beta -1,\alpha[n],z)\) if \(\gamma\) and \(\beta\) are successor ordinals;<br />
+         \(\alpha[n]=\varphi (s,\beta ,z,\gamma [n])\) if \(\gamma\) is a limit ordinal;<br />
+         \(\alpha[n]=\varphi (s,\beta [n],z,\gamma )\) if \(\gamma =0\) and \(\beta\) is a limit ordinal;<br />
+         \(\alpha[n]=\varphi (s,\beta [n],\varphi (s,\beta ,z,\gamma -1)+1,z)\) if \(\gamma\) is a successor ordinal and \(\beta\) is a limit ordinal.<br />
+        Next, define \(f_\alpha(n)\) in the FGH using the above fundamnetal sequences as \(\alpha(n)\). <br />
+        The Omegaggol is<br />
+         \(\left. \begin{matrix} &&\varphi(10^{100}\underbrace{0,\cdots 0,})(10^{100})\\ & & \varphi(10^{100}\underbrace{0,\cdots 0,})(10^{100}) \\ & & \;\;\underbrace{\quad\;\; \vdots \quad \;\;}\\ & & \varphi(10^{100}\underbrace{0,\cdots 0,})(10^{100}) \\ & & 10^{100}\quad 0's \end{matrix} \right \} \varphi(10^{100},\underbrace{0,0,\cdots,0,0}_{10^{100}})\) <br />
+        </html>
