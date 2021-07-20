@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="../Style.css">
+    <link rel="shortcut icon" type="image/jpg" href="../istockphoto-828605644-640x640 (1).jpg">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <body>
+        <h1>Powerful arrow Notation and Chained variant.</h1>
+        <p>
+            \begin{eqnarray*} a \uparrow^n b = \left\{ \begin{array}{ll} {a}^b & (n = 1) \\ a & (n > 1, b = 1) \\ [a \uparrow^{n-1} (]^{b\uparrow^{n-1}b}a \uparrow^n (b-1)) & (n > 1, b > 1) \end{array} \right. \end{eqnarray*}
+            \(a \rightarrow b = a^{b}\)<br />
+            Where the chained variant is as follows:<br /> 
+            \(a \rightarrow b \rightarrow c = a\uparrow^cb = a\underbrace{\uparrow\ldots\uparrow}_cb\) (in which powerful-arrow notation is used) = a[c+2]b (in which the bracket notation of hyper operator is used)<br /> 
+            \(a \rightarrow\ldots\rightarrow b \rightarrow 1 = a \rightarrow\ldots\rightarrow b\) — When last entry is 1, it will be ignored.<br /> 
+            \(a \rightarrow\ldots\rightarrow b \rightarrow 1 \rightarrow c = a \rightarrow\ldots\rightarrow b\)<br /> 
+            \(a \rightarrow\ldots\rightarrow b \rightarrow (c + 1) \rightarrow (d + 1) = a \rightarrow\ldots\rightarrow b \rightarrow (a \rightarrow\ldots\rightarrow b \rightarrow c \rightarrow (d + 1) ) \rightarrow d\)<br /> 
+            \(a\rightarrow^1 b = a^b\)
+        
+            \(a\rightarrow^x b = f(a)\rightarrow^{x-1} f(a)\rightarrow^{x-1} f(a) \ldots \rightarrow^{x-1} f(a)\) where there are \(b\rightarrow^{x-1}b\) copies of \(f(a)\), where \(f(a) = a\uparrow^aa\) (refer above)<br />
+            \(\#\rightarrow^x 1 = \#\) (here, \(\#\) denotes an arbitrarily long part of the chain before the relevant terms)<br />
+            \(\#\rightarrow^x 1\rightarrow^y a = \#\) <br />
+            \(\#\rightarrow^n a\rightarrow^1 b = \#\rightarrow^n (\#\rightarrow^n (a-1)\rightarrow^1 b)\rightarrow^1 (b-1)\)<br />
+            \(\#\rightarrow^n a\rightarrow^x b = \#\rightarrow^n a\rightarrow^{x-1} a\rightarrow^{x-1} a \ldots \rightarrow^{x-1} a\) where there are \(b\) copies of \(a\)<br />
+        </p>
+        <footer>Return to <a href ="https://penguin-number-123.github.io/NotationsFunctions">Notations and Functions</a>.</footer>
+    </body>
+</html>
