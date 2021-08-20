@@ -7,40 +7,40 @@
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <h1>Conham's number</h1>
         <p>
-            Conham's number is a mix of Conway's chained arrow notation and Graham's number.
+            Conham's number is a mix of Conway's chained arrow notation and Graham's number.<br />
 
-            \(CH_0 = G_{3\rightarrow 3 \rightarrow 3 \rightarrow 3}\)
+            \(CH_0 = G_{3\rightarrow 3 \rightarrow 3 \rightarrow 3}\)<br />
 
-            \(CH_{k+1} = \underbrace{3\rightarrow 3 \cdots \rightarrow 3}_{CH_k \rightarrow s}\)
+            \(CH_{k+1} = \underbrace{3\rightarrow 3 \cdots \rightarrow 3}_{CH_k \rightarrow s}\)<br />
 
-            Conham's number = \(CH_64\)
+            Conham's number = \(CH_64\)<br />
 
-            My Conham's number array generator:
+            My Conham's number array generator:<br />
 
-            (note that # means the rest of the array, and that n and m are whole numbers that are positive, zero included)
+            (note that # means the rest of the array, and that n and m are whole numbers that are positive, zero included)<br />
 
-            \(CA(n,m,\#) = CH_{CA(n-1,m,\#)}\)
-            \(CA(n,m,\#) = CA(CH_m,\#)\) When n = 0
+            \(CA(n,m,\#) = CH_{CA(n-1,m,\#)}\)<br />
+            \(CA(n,m,\#) = CA(CH_m,\#)\) When n = 0<br />
 
-            That's it for this array
+            That's it for this array<br />
 
-            We could also create a unary function, denoted \(f_{CA}(n)\).
+            We could also create a unary function, denoted \(f_{CA}(n)\).<br />
 
-            \(f_{CA}(n) = \underbrace{CA(n,n\cdots,n)}_{n\,ns}\)
+            \(f_{CA}(n) = \underbrace{CA(n,n\cdots,n)}_{n\,ns}\)<br />
 
-            So, we have an array of size n, containing only n.
+            So, we have an array of size n, containing only n.<br />
 
-            (Example: \(f_{CA}(3) = CA(3,3,3)\) ) Hope this helps
+            (Example: \(f_{CA}(3) = CA(3,3,3)\) ) Hope this helps<br />
 
-            Unfortunately, I do not know how to not use ellipses.
+            Unfortunately, I do not know how to not use ellipses.<br />
 
-            One final note:
+            One final note:<br />
 
-            Conhamgol = \(f_{CA}(10^{100})\)
+            Conhamgol = \(f_{CA}(10^{100})\)<br />
 
-            Conhamgolplex = \(f_{CA}(10^{10^{100}})\)
+            Conhamgolplex = \(f_{CA}(10^{10^{100}})\)<br />
 
-            Conhamduogolplex = \(f_{CA}(10^{10^{10^{100}}})\)
+            Conhamduogolplex = \(f_{CA}(10^{10^{10^{100}}})\)<br />
         </p>
     </body>
     <footer>
