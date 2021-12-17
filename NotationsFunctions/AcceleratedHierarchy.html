@@ -11,12 +11,12 @@
 
         \(h_{\alpha+1}(n) = h_{\alpha}\alpha\rightarrow^\alpha\alpha(n\rightarrow^nn)\) until n = 0, in which case, refer to the top rule.(<a href="https://penguin-number-123.github.io/NotationsFunctions/PowerfulArrow.html">Powerful Arrow Notation</a>)<br />
         
-        \(h_{\alpha}(n) = h_{a[n\rightarrow^nn]}(n\rightarrow^nn)\)(<a href="https://penguin-number-123.github.io/NotationsFunctions/PowerfulArrow.html">Powerful Arrow Notation</a>)<br />
-    Where the \(\uparrow\) is defined as follows:<br />
+        \(h_{\alpha}(n) = h_{a[n\rightarrow^nn]}(n\rightarrow^nn)\)for some limit ordinal \(\alpha\)(<a href="https://penguin-number-123.github.io/NotationsFunctions/PowerfulArrow.html">Powerful Arrow Notation</a>)<br />
+    In order to understand the chained arrows, we must create a shorthand for repeated recursion, where I use the symbol \(\uparrow\):<br />
     \begin{eqnarray*} f_x \uparrow^n b(c) = \left\{ \begin{array}{ll} {f_x}^b(c) & (n = 1) \\ f_x(c) & (n > 1, b = 1) \\ f_x \uparrow^{n-1} (f_x \uparrow^{n-1} (f_x \uparrow^{n-1} (f_x \uparrow^n (b-1)(c))(c) & (n > 1, b > 1) \end{array} \right. \end{eqnarray*}
-    The [] means repeat anything inside the exponent number of times.
+    Anything inside the [ ] will be repeated, i.e. \([3\uparrow]^{3}3 =3\uparrow3\uparrow3\uparrow3\) 
 
-    Where the chained arrows is as follows:<br /> 
+    For a second level recoursion, I define a chained variant of the recursive arrow:<br /> 
     \(a \rightarrow b = a^{b}\)<br /> 
     \(f_x \rightarrow b \rightarrow c(d) = f_x\uparrow^cb \) (in which up-arrow notation is used)<br /> 
     \(f_x \rightarrow\ldots\rightarrow b \rightarrow 1(d) = f_x \rightarrow\ldots\rightarrow b(d)\) — When last entry is 1, it will be ignored.<br /> 
