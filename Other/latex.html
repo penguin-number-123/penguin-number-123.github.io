@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <script src="script/jquery-1.4.2.js"></script>
+    <style>
+      .latex { vertical-align: middle;} /*default styling for latex imgs */
+      .bordered { border: 1px solid red;}
+      .block { display: block; }
+    </style>
+     
+    <script>
+      function process_latex() {
+        $('pre.latex').each(function(e) {
+          var tex = $(this).text();
+          var url = "http://chart.apis.google.com/chart?cht=tx&chl=" + encodeURIComponent(tex);
+          var cls = $(this).attr('class');
+          var img = '<img src="' + url + '" alt="' + tex + '" class="' + cls + '"/>';
+          $(img).insertBefore($(this));
+          $(this).hide();
+        });
+      }
+      $(document).ready(function() {process_latex();});
+    </script>
+    <script>
+        tex = window.location.href.split("?tex=")[1]
+        document.getElementById("img") = tex
+    </script>
+    <pre id="img"></pre>
+</html>
