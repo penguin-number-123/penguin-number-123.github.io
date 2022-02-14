@@ -21,8 +21,11 @@
       $(document).ready(function() {process_latex();});
     </script>
     <script>
-        tex = window.location.href.split("?tex=")[1]
-        document.getElementById("img") = tex
+        tex = window.location.href.split("?")[1].split("=")[1]
+        cla = window.location.href.split("?")[1].split("=")[3] // tex, something, class, something
+        console.log(tex)
+        tex.includes("\[")?document.getElementById("img").className = "latex block":document.getElementById("img").className = "latex";
+        document.getElementById("img") = tex;
     </script>
-    <pre id="img"></pre>
+    <pre id="img" class="latex"></pre>
 </html>
