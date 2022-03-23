@@ -1,0 +1,18 @@
+#Perplexing universal syntaxical scriping language;
+Scene{
+    prompt{
+        place:"Interview Room";
+        text:"Welcome, Penguin. You have been selected into Penguin Hyperion Labs's interview. We are seeking for individials that are able to solve problems swiftly. Your trial begins now."
+    }
+    room main{
+        prompt{
+            place:"A hotel room"
+        }
+        sub sub1{
+            objects = {}
+        }
+        
+        
+    }
+}
+init

@@ -1,0 +1,25 @@
+.terminal {
+    height: 90vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    font-family: "sans-serif";
+    font-size:20;
+}
+input{
+    background-color: black;
+    color: white;
+    font-family: "sans-serif";
+    border: none;
+    font-size: 20;
+    position: left;
+    bottom: 5px;
+    right: 10px;
+    width: 150%
+
+}
+body{
+    background-color: black;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
