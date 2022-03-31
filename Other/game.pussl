@@ -9,7 +9,23 @@ Scene{
             place:"A hotel room"
         }
         sub sub1{
-            objects = {}
+            puzzle "puzzle1" = {
+               on_word(["enter","type","punch in","input"]){
+                   text:"A screen with a keypad lies on a door. It accepts a three digit code."
+                   code:{
+                       if(arg[1]=="123"){
+                           complete
+                       }
+                   }
+                   completed:"The keypad makes a click and the door swings open"
+
+               }    
+            }
+            interactive "door"
+            objects = {
+                puzzle1,
+                clock:"The time of the clock says 11:00 AM."
+            }
         }
         
         
