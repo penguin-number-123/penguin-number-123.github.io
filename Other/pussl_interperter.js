@@ -1,6 +1,6 @@
 t = ""
 output = document.getElementById("output")
-
+const fs = require('fs')
 
 try {
     t = fs.readFileSync('./game.pussl', 'utf8')

@@ -1,5 +1,13 @@
 {
   "dependencies": {
+    "@craco/craco": "^5.9.0",
+    "firebase": "^9.6.11",
+    "firebaseui": "^6.0.1",
     "mathjax-node-svg2png": "^2.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "tailwindcss": "^3.0.24"
   }
 }
