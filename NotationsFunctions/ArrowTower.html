@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <body>
+        <h1>The Arrow Tower</h1>
+        <p>The Arrow Tower is a simple function.</p>
+        Arrow towers stem from a simple idea, which is to iterate the arrow notation
+
+        Let A(n,k) be a function mapping numbers n,k to a natural number m for n,k in \(\mathbb{N}\)
+
+        First we start with the termination rule.
+
+        A(n,0) = \(n\uparrow^{n}n\)
+
+        Then, the recursion rule, which happens only when k is larger than or equal to 0. (because if k=0, k+1=1 i think)
+
+        A(n,k+1) = \(A(n,k)\uparrow^{A(n,k)}A(n,k)\)
+
+        This is a pretty simple and easy recursion, and I guess it is \(f_{\omega^2}(n)\), but I have no proof of this, so if you can please tell me roughly how fast it grows.
+        <em></em>
+        <em>Morbillion = A(75000000,A(10^9,10^9))</em>
+    </body>
+
+    <footer>
+        Return to <a href = "https://penguin-number-123.github.io/NotationsFunctions">Notations and Functions</a>
+    </footer>
+</html>
