@@ -11,8 +11,8 @@
             \begin{eqnarray*} a \uparrow^n b = \left\{ \begin{array}{ll} {a}^b & (n = 1) \\ a & (n > 1, b = 1) \\ (a \uparrow^{n-1})^{b\uparrow^{n-1}b} (a \uparrow^n (b-1)) & (n > 1, b > 1) \end{array} \right. \end{eqnarray*}
             <h2>Definition of the third case</h2>
             The third case referes to recursion.<br>
-            \(f^{a+1}(x) = f^{a}(f^{a}(x))\), for \(a>0\)<br>
-            \(f^{0}(x) = f(x)\) Termination case.<br>
+            \(f^{a+1}(x) = f^{a}(f^{a}(x))\), for \(a\ge 0\)<br>
+            \(f^{1}(x) = f(x)\) Termination case.<br>
             Note this is slightly different from normal recurstion, as the total iterations should be \(2^{a}\)
             In the above third case, we take \(f(x)\) to be \(a\uparrow^{n-1}(x)\).
             \(a \rightarrow b = a^{b}\)<br />
