@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> <html>
     <link rel="stylesheet" href="../Style.css">
     <link rel="shortcut icon" type="image/jpg" href="../istockphoto-828605644-640x640 (1).jpg">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -7,13 +6,13 @@
     <body>
         <h1>Powerful arrow Notation and Chained variant.</h1>
         <p>
-            Note that all variables in this function are natural numbers.<br>
-            In addition, PAN never uses multiple up arrows, which can help distinguish it from normal up arrow notation<br>
+            Note that all variables in this function are natural numbers. For PAN, the domain would be \(\mathbb{N}^3\). For the chained varaiant, we would have the domain as \(\mathbb{N}^n\) for \(n \in \mathbb{N}\)<br> In addition, PAN never uses multiple up arrows, which can help distinguish it from normal up arrow notation<br>
             Finally, if needed, PAN can be written with \(\uparrow_P\) for best legibility.
             \begin{eqnarray*} a \uparrow^n b = \left\{ \begin{array}{ll} {a}^b & (n = 1) \\ a & (n > 1, b = 1) \\ (a \uparrow^{n-1})^{b\uparrow^{n-1}b} (a \uparrow^n (b-1)) & (n > 1, b > 1) \end{array} \right. \end{eqnarray*}
             <h2>Definition of the third case</h2>
             The third case referes to recursion.<br>
-            \(f^{a}(x) = f^{a-1}(f^{a-1}(x))\)<br>
+            \(f^{a+1}(x) = f^{a}(f^{a}(x))\), for \(a>0\)<br>
+            \(f^{0}(x) = f(x)\) Termination case.<br>
             Note this is slightly different from normal recurstion, as the total iterations should be \(2^{a}\)
             In the above third case, we take \(f(x)\) to be \(a\uparrow^{n-1}(x)\).
             \(a \rightarrow b = a^{b}\)<br />
