@@ -10,7 +10,7 @@
             Note that all variables in this function are natural numbers.<br>
             In addition, PAN never uses multiple up arrows, which can help distinguish it from normal up arrow notation<br>
             Finally, if needed, PAN can be written with \(\uparrow_P\) for best legibility.
-            \begin{eqnarray*} a \uparrow^n b = \left\{ \begin{array}{ll} {a}^b & (n = 1) \\ a & (n > 1, b = 1) \\ a \uparrow^{n-1}^{b\uparrow^{n-1}b} (a \uparrow^n (b-1)) & (n > 1, b > 1) \end{array} \right. \end{eqnarray*}
+            \begin{eqnarray*} a \uparrow^n b = \left\{ \begin{array}{ll} {a}^b & (n = 1) \\ a & (n > 1, b = 1) \\ (a \uparrow^{n-1})^{b\uparrow^{n-1}b} (a \uparrow^n (b-1)) & (n > 1, b > 1) \end{array} \right. \end{eqnarray*}
             <h2>Definition of the third case</h2>
             The third case referes to recursion.<br>
             \(f^{a}(x) = f^{a-1}(f^{a-1}(x)))<br>
